@@ -1,15 +1,27 @@
-const btn = document.getElementById('modo-btn');
+// script.js
 
-// Cargar preferencia guardada
-if (localStorage.getItem('modo') === 'oscuro') {
-  document.body.classList.add('oscuro');
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const btnModo = document.getElementById("modo-btn");
+  const body = document.body;
 
-btn.addEventListener('click', () => {
-  document.body.classList.toggle('oscuro');
-  if (document.body.classList.contains('oscuro')) {
-    localStorage.setItem('modo', 'oscuro');
-  } else {
-    localStorage.setItem('modo', 'claro');
+  // Verifica si el usuario ya tenía una preferencia guardada
+  const modoGuardado = localStorage.getItem("modo");
+
+  if (modoGuardado === "oscuro") {
+    body.classList.add("dark-mode");
+    btnModo.textContent = "☀️ Modo claro";
   }
+
+  btnModo.addEventListener("click", function () {
+    body.classList.toggle("dark-mode");
+
+    // Cambiar texto del botón
+    if (body.classList.contains("dark-mode")) {
+      btnModo.textContent = "☀️ Modo claro";
+      localStorage.setItem("modo", "oscuro");
+    } else {
+      btnModo.textContent = "🌙 Modo oscuro";
+      localStorage.setItem("modo", "claro");
+    }
+  });
 });

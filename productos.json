@@ -1,0 +1,23 @@
+[
+  {
+    "marca": "LG",
+    "categoria": "residencial",
+    "titulo": "Modelos residenciales",
+    "imagen": "IMAGEN/PRECIOS LG ENERO 2025.jpeg",
+    "descripcion": "Listado de precios actualizado a mayo de 2025."
+  },
+  {
+    "marca": "LG",
+    "categoria": "comercial",
+    "titulo": "Modelos comerciales",
+    "imagen": "IMAGEN/a287b392-c51f-4b23-87f3-c89dda5f3099.jpg",
+    "descripcion": "Aplican condiciones especiales según volumen."
+  },
+  {
+    "marca": "Samsung",
+    "categoria": "comercial",
+    "titulo": "Modelos comerciales",
+    "imagen": "IMAGEN/a287b392-c51f-4b23-87f3-c89dda5f3099.jpg",
+    "descripcion": "Listado vigente hasta mayo de 2025."
+  }
+]
